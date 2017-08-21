@@ -31,3 +31,13 @@ temp = 5
 while temp < 10:
     print (temp)
     temp += 1 # increment statement
+
+# Break statement
+Magicnumber = 25
+
+for n in range(100):
+    if n is Magicnumber:
+      print(n, "is the magic number")    # This statement is used to print number and string together
+      break
+    else:
+      print(n)
