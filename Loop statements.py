@@ -35,9 +35,16 @@ while temp < 10:
 # Break statement
 Magicnumber = 25
 
-for n in range(100):
+for n in range(10,100):
     if n is Magicnumber:
       print(n, "is the magic number")    # This statement is used to print number and string together
       break
     else:
       print(n)
+
+oddnumbers = [3, 5, 7, 9]
+
+for m in range(1,10):
+    if m in oddnumbers:
+        continue
+    print (m)
