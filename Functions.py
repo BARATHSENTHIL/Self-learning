@@ -46,7 +46,7 @@ def personal_details(age = 0, name = '', sex = ''):
 
 #-------------------main----------------------
 # calling the function
-
+'''
 greetings()
 eurtoinr(150)
 
@@ -62,12 +62,12 @@ dumb_sentence(action = 'marries', item = 'Radhika')
 calculate_total(32)
 calculate_total(35,658, 89)
 
-''' Unpacking the arguments - Here the arguments are passed as values list and the (*) sign in the function parameter 
-unpacks each value in the list and assigns to the corresponding variable in the function definition '''
+'''''' Unpacking the arguments - Here the arguments are passed as values list and the (*) sign in the function parameter 
+unpacks each value in the list and assigns to the corresponding variable in the function definition ''''''
 
 values = [25, 'Barath', 'male']
 personal_details(*values)
-
+'''
 #---------------------------------------------
 # Dictionary - Keys and values
 
