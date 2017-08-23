@@ -67,3 +67,11 @@ unpacks each value in the list and assigns to the corresponding variable in the 
 
 values = [25, 'Barath', 'male']
 personal_details(*values)
+
+#---------------------------------------------
+# Dictionary - Keys and values
+
+car_model = {'AUDI A7':' as EGO car', 'BMW X1':' as Rear traffic', 'MAN Semi-trailer':' as Front traffic'}
+
+for key,value in car_model.items():
+    print (key + value)
