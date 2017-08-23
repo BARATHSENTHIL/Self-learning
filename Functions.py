@@ -30,6 +30,16 @@ also change the order of the arguments
 def dumb_sentence(name = 'Barath', action = 'eats', item = 'chicken'):
     print name, action, item
 
+''' Function to take flexible number of arguments 
+ - In the function the parameter *args denotes in short as a list to hold multiple arguments. 
+ The list can be used within the function to define what to do with each argument value
+'''
+def calculate_total(*args):
+    total = 0
+    for i in args:
+        total += i
+    print total
+
 
 #-------------------main----------------------
 # calling the function
@@ -41,8 +51,11 @@ salary_in_hand = netsalary(4000)
 print "The salary i would get every month", salary_in_hand, "euros"
 
 get_gender('m')
-get_gender('f')
 get_gender()
 
 dumb_sentence()
 dumb_sentence(action = 'marries', item = 'Radhika')
+
+calculate_total(32)
+calculate_total(35,658, 89)
+calculate_total(75, 89, 45, 756, 1012)
