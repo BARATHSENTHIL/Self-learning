@@ -75,3 +75,27 @@ car_model = {'AUDI A7':' as EGO car', 'BMW X1':' as Rear traffic', 'MAN Semi-tra
 
 for key,value in car_model.items():
     print (key + value)
+
+#---------------------------------------------
+# Exceptions handling
+while (1):
+    try:
+        # try contains the code which likely to cause exception errors
+        number = int(input("Enter a number \n"))
+        print(20/number)
+        break
+    # Exception to handle specific error (User when entered character input)
+    except ValueError:
+        print ("Please enter a numeric value")
+
+    # Exception when user entered zero
+    except ZeroDivisionError:
+            print ("Enter value other than zero")
+
+    # Exception in a generic form
+    except:
+        print ("Don't know the source of error")
+
+    # the finally section is used to execute the code no matter what if there is any error or no errors
+    finally:
+        print ("loop executed or completed")
