@@ -1,18 +1,17 @@
-class Calculator:
+class Student:
 
-    # The init method is similar to constructor of a class which is used to initialize the member variables
-    def __init__(self, x, y):
-        self.operand1 = x
-        self.operand2 = y
+      # The variable University is Class variable which remains same for all objects of the class
+      University = 'Technische Hochschule Ingolstadt'
 
-    def add(self):
-        print self.operand1 + self.operand2
+      def __init__(self, name):
 
-    def mul(self):
-        print self.operand1 * self.operand2
+          # The variable student name is known as Instance variable which is unique for each object the class
+          self.studentname = name
 
-cal_1 = Calculator(10, 20)
-cal_1.add()
 
-cal_2 = Calculator(110, 230)
-cal_2.mul()
+stud1 = Student('Barath')
+stud2 = Student('Karthik')
+
+print stud1.studentname,  stud1.University
+print stud2.studentname,  stud2.University
+
