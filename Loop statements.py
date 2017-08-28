@@ -64,3 +64,15 @@ first, *middle, last = [53, 68, 89, 75, 65, 32]. So *middle has [68, 89, 75, 65]
 
 The expression *middle is supported only at python versions > 3.0
 '''
+
+#-------------------zip function-----------------
+# The zip function is used to bundel each element from the list with elements in other list provided both lists
+# are of same length
+
+first_name = ['Senthil', 'Poornima', 'Barath', 'Krishna', 'Febi']
+last_name = ['Natesan', 'Pandarinathan','senthil', 'senthil', 'kullan']
+
+name = zip(first_name, last_name)
+
+for ind in name:
+    print ind
