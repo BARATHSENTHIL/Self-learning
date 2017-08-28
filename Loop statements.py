@@ -48,3 +48,19 @@ for m in range(1,10):
     if m in oddnumbers:
         continue
     print (m)
+
+#-------------unpacking lists and tuples-----------------
+''' list = ['Aug 28', 'Bauget', 0.49]  -> the list contains purchase date, item name and price. 
+To access each, we may use list[0] or list[1] etc. Alternatively it can be done as
+'''
+
+date, name, price = ['Aug 28', 'Bauget', 0.49]
+print name
+
+'''
+Similarly to access only the elements excluding the first and last elements it can be given as
+
+first, *middle, last = [53, 68, 89, 75, 65, 32]. So *middle has [68, 89, 75, 65].
+
+The expression *middle is supported only at python versions > 3.0
+'''
