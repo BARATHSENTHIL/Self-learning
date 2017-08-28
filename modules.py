@@ -12,7 +12,7 @@ Functions.get_gender('m')
 Functions.get_gender()
 
 Functions.dumb_sentence()
-Functions.dumb_sentence(action = 'marries', item = 'Radhika')
+Functions.dumb_sentence(action = 'weds', item = 'Radhika')
 
 Functions.calculate_total(32)
 Functions.calculate_total(35,658, 89)
@@ -22,3 +22,12 @@ unpacks each value in the list and assigns to the corresponding variable in the 
 
 values = [25, 'Barath', 'male']
 Functions.personal_details(*values)
+
+#---------------------------Lambda function---------------------
+'''
+The lambda function is a short and quick nameless function. It is used when certain functionality has to be done 
+only once. The following code shows the use of lambda function
+'''
+
+result = lambda input_parameter: input_parameter + 50
+print(result(10))
