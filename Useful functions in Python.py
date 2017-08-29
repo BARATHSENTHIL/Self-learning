@@ -109,3 +109,18 @@ Employee_details = [
 ]
 
 print(heapq.nlargest(2, Employee_details, key = lambda Employee_details: Employee_details ['Salary']))
+
+#------------------Dictionary Multiple key sort --------------
+from operator import itemgetter
+
+names = [
+    {'fname':'Senthil','lname':'Natesan'},
+    {'fname':'Poornima','lname':'Pandarinathan'},
+    {'fname':'Barath','lname':'Senthil'},
+    {'fname':'Krishna','lname':'Senthil'},
+    {'fname':'Febi','lname':'Vkn'},
+    {'fname':'Radhika','lname':'Murugan'}
+]
+
+for ind in sorted(names, key = itemgetter('fname', 'lname')):
+    print (ind)
