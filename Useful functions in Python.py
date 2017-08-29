@@ -64,3 +64,29 @@ print(sorted(zip(Stocks.values(), Stocks.keys())))
 
 # Sorting the elements in dictionary based on keys
 print(sorted(zip(Stocks.keys(), Stocks.values())))
+
+#--------------Struct--------------
+# Struct is used to represent the user data into equivalent byte format
+
+from struct import *
+
+# pack function is used to transform numerical data into bytes of the specified format like integer, integer, float
+packed_data = pack('iif', 20, 54, 45.32)
+print (packed_data)
+
+# unpack function restores bytes from specified format to numerical value
+unpacked_data = unpack('iif', packed_data)
+print (unpacked_data)
+
+#---------------Map function ---------------
+# map function is used to perform certain calculation or function on lists
+
+data = [20, 56, 78]
+
+def squared_output (data):
+    return data * data
+
+# Map function has two paramaters:
+# > first parameter denotes the function to be performed on the list
+# > second parameter denotes the data or list on which the function is applied
+print (list(map (squared_output, data)))
