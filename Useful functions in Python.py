@@ -90,3 +90,22 @@ def squared_output (data):
 # > first parameter denotes the function to be performed on the list
 # > second parameter denotes the data or list on which the function is applied
 print (list(map (squared_output, data)))
+
+#------------heapq functinality-----------------
+# Heapq function is used to extract n number of max and min elements from the list
+import heapq
+
+marks = [35, 68, 98, 56, 21, 32, 74, 85]
+
+print(heapq.nlargest(3, marks))
+print (heapq.nsmallest(2, marks)) # first arg > no of elements: second arg > from which list to sort
+
+Employee_details = [
+    {'Employee name': 'Senthil', 'EmpId': 101, 'Salary': 52000},
+    {'Employee name': 'Poornima', 'EmpId': 111, 'Salary': 47000},
+    {'Employee name': 'Barath', 'EmpId': 121, 'Salary': 25000},
+    {'Employee name': 'Krishna', 'EmpId': 132, 'Salary': 18000},
+    {'Employee name': 'Febi', 'EmpId': 148, 'Salary': 11000}
+]
+
+print(heapq.nlargest(2, Employee_details, key = lambda Employee_details: Employee_details ['Salary']))
